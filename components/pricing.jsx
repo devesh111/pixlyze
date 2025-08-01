@@ -115,7 +115,7 @@ const PricingSection = () => {
         "AI Retouch, Upscaler and more",
       ],
       featured: true,
-      planId: "cplan_30Sgeu80yAbAnKA1BVzORD4E1MD",
+      planId: process.env.CLERK_PLAN_ID,
       buttonText: "Upgrade to Pro",
     },
   ];
