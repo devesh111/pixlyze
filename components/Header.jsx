@@ -19,7 +19,7 @@ const Header = () => {
         return null;
     }
     return (
-        <header className="fixed left-1/2 top-6 z-50 transform -translate-x-1/2 text-nowrap">
+        <header className="glass-header fixed left-1/2 top-6 z-50 transform -translate-x-1/2 text-nowrap">
             <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-full px-8 py-3 flex items-center justify-between w-full">
                 <Link href="/" className="mr-10 md:mr-20">
                     <Image
@@ -34,19 +34,19 @@ const Header = () => {
                     <div className="hidden md:flex space-x-6">
                         <Link 
                             href="#features"
-                            className="text-white text-sm font-semibold transition-all duration-300 hover:text-cyan-400 cursor-pointer"
+                            className="text-white text-sm font-semibold transition-all duration-300 hover:text-orange-200 cursor-pointer"
                         >
                             Features
                         </Link>
                         <Link 
                             href="#pricing"
-                            className="text-white text-sm font-semibold transition-all duration-300 hover:text-cyan-400 cursor-pointer"
+                            className="text-white text-sm font-semibold transition-all duration-300 hover:text-orange-200 cursor-pointer"
                         >
                             Pricing
                         </Link>
                         <Link 
-                            href="#cta"
-                            className="text-white text-sm font-semibold transition-all duration-300 hover:text-cyan-400 cursor-pointer"
+                            href="#contact"
+                            className="text-white text-sm font-semibold transition-all duration-300 hover:text-orange-200 cursor-pointer"
                         >
                             Contact
                         </Link>

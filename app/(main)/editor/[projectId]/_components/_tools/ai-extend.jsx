@@ -188,7 +188,7 @@ const AIExtenderControls = ({ project }) => {
               onClick={() => selectDirection(key)}
               variant={selectedDirection === key ? "default" : "outline"}
               className={`cursor-pointer flex items-center gap-2 ${
-                selectedDirection === key ? "bg-cyan-500 hover:bg-cyan-600" : ""
+                selectedDirection === key ? "bg-pink-500 hover:bg-pink-600" : ""
               }`}
             >
               <Icon className="h-4 w-4" />
@@ -217,7 +217,7 @@ const AIExtenderControls = ({ project }) => {
 
       {/* Dimensions Preview */}
       {selectedDirection && (
-        <div className="bg-slate-700/30 rounded-lg p-3">
+        <div className="bg-pink-400/10 rounded-lg p-3">
           <h4 className="text-sm font-medium text-white mb-2">
             Extension Preview
           </h4>
@@ -227,13 +227,13 @@ const AIExtenderControls = ({ project }) => {
               {Math.round(currentImage.width * (currentImage.scaleX || 1))} ×{" "}
               {Math.round(currentImage.height * (currentImage.scaleY || 1))}px
             </div>
-            <div className="text-cyan-400">
+            <div className="text-pink-400">
               Extended: {newWidth} × {newHeight}px
             </div>
             <div className="text-white/50">
               Canvas: {project.width} × {project.height}px (unchanged)
             </div>
-            <div className="text-cyan-300">
+            <div className="text-pink-300">
               Direction:{" "}
               {DIRECTIONS.find((d) => d.key === selectedDirection)?.label}
             </div>
@@ -253,7 +253,7 @@ const AIExtenderControls = ({ project }) => {
       </Button>
 
       {/* Instructions */}
-      <div className="bg-slate-700/30 rounded-lg p-3">
+      <div className="bg-pink-400/10 rounded-lg p-3">
         <p className="text-xs text-white/70">
           <strong>How it works:</strong> Select one direction → Set amount →
           Apply extension. AI will intelligently fill the new area in that

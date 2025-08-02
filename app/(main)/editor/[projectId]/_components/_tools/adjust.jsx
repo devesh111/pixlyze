@@ -237,7 +237,7 @@ const AdjustControls = () => {
       ))}
 
       {/* Info */}
-      <div className="mt-6 p-3 bg-slate-700/50 rounded-lg mb-10">
+      <div className="mt-6 p-3 bg-pink-400/10 rounded-lg mb-10">
         <p className="text-xs text-white/70">
           Adjustments are applied in real-time. Use the Reset button to restore
           original values.
@@ -247,7 +247,7 @@ const AdjustControls = () => {
       {/* Processing Indicator */}
       {isApplying && (
         <div className="flex items-center justify-center py-2">
-          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-cyan-400"></div>
+          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-pink-400"></div>
           <span className="ml-2 text-xs text-white/70">
             Applying filters...
           </span>

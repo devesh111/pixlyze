@@ -242,17 +242,17 @@ const BackgroundControls = ({ project }) => {
 
       {/* Shadcn UI Tabs */}
       <Tabs defaultValue="color" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 bg-slate-700/50">
+        <TabsList className="grid w-full grid-cols-2 bg-purple-950/50">
           <TabsTrigger
             value="color"
-            className="data-[state=active]:bg-cyan-500 data-[state=active]:text-white cursor-pointer"
+            className="data-[state=active]:bg-pink-500 data-[state=active]:text-white cursor-pointer"
           >
             <Palette className="h-4 w-4 mr-2" />
             Color
           </TabsTrigger>
           <TabsTrigger
             value="image"
-            className="data-[state=active]:bg-cyan-500 data-[state=active]:text-white cursor-pointer"
+            className="data-[state=active]:bg-pink-500 data-[state=active]:text-white cursor-pointer"
           >
             <ImageIcon className="h-4 w-4 mr-2" />
             Image
@@ -282,7 +282,7 @@ const BackgroundControls = ({ project }) => {
                 value={backgroundColor}
                 onChange={(e) => setBackgroundColor(e.target.value)}
                 placeholder="#ffffff"
-                className="flex-1 bg-slate-700 border-white/20 text-white"
+                className="flex-1 bg-purple-950 border-white/20 text-white"
               />
               <div
                 className="w-10 h-10 rounded border border-white/20 cursor-pointer"
@@ -319,7 +319,7 @@ const BackgroundControls = ({ project }) => {
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyPress={handleSearchKeyPress}
               placeholder="Search for backgrounds..."
-              className="flex-1 bg-slate-700 border-white/20 text-white"
+              className="flex-1 bg-purple-950 border-white/20 text-white"
             />
             <Button
               onClick={searchUnsplashImages}
@@ -345,7 +345,7 @@ const BackgroundControls = ({ project }) => {
                 {unsplashImages.map((image) => (
                   <div
                     key={image.id}
-                    className="relative group cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-cyan-400 transition-colors"
+                    className="relative group cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-pink-400 transition-colors"
                     onClick={() =>
                       handleImageBackground(image.urls.regular, image.id)
                     }

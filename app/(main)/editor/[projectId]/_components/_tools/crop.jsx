@@ -132,17 +132,17 @@ const CropContent = () => {
       width: bounds.width * 0.8,
       height: bounds.height * 0.8,
       fill: "transparent",
-      stroke: "#00bcd4",
+      stroke: "pink",
       strokeWidth: 2,
       strokeDashArray: [5, 5],
       selectable: true,
       evented: true,
       name: "cropRect",
-      cornerColor: "#00bcd4",
+      cornerColor: "pink",
       cornerSize: 12,
       transparentCorners: false,
       cornerStyle: "circle",
-      borderColor: "#00bcd4",
+      borderColor: "pink",
       borderScaleFactor: 1,
       // Add a custom property to identify crop rectangles
       isCropRectangle: true,
@@ -314,11 +314,11 @@ const CropContent = () => {
     <div className="space-y-6">
       {/* Crop Mode Status */}
       {isCropMode && (
-        <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-lg p-3">
-          <p className="text-cyan-400 text-sm font-medium">
+        <div className="bg-pink-500/10 border border-pink-500/20 rounded-lg p-3">
+          <p className="text-pink-400 text-sm font-medium">
             ✂️ Crop Mode Active
           </p>
-          <p className="text-cyan-300/80 text-xs mt-1">
+          <p className="text-pink-300/80 text-xs mt-1">
             Adjust the blue rectangle to set crop area
           </p>
         </div>
@@ -351,7 +351,7 @@ const CropContent = () => {
                   onClick={() => applyAspectRatio(ratio.value)}
                   className={`text-center p-3 border rounded-lg transition-colors cursor-pointer ${
                     selectedRatio === ratio.value
-                      ? "border-cyan-400 bg-cyan-400/10"
+                      ? "border-pink-400 bg-pink-400/10"
                       : "border-white/20 hover:border-white/40 hover:bg-white/5"
                   }`}
                 >
@@ -383,7 +383,7 @@ const CropContent = () => {
       )}
 
       {/* Instructions */}
-      <div className="bg-slate-700/30 rounded-lg p-3">
+      <div className="bg-pink-400/10 rounded-lg p-3">
         <p className="text-xs text-white/70">
           <strong>How to crop:</strong>
           <br />

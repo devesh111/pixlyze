@@ -25,7 +25,7 @@ const EditorPage =  () => {
 
     if (isLoading) {
         return (
-            <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+            <div className="min-h-screen bg-purple-950 flex items-center justify-center">
                 <div className="flex flex-col items-center gap-4">
                     <Loader2 className="h-8 w-8 animate-spin text-cyan-400" />
                     <p className="text-white/70">
@@ -38,7 +38,7 @@ const EditorPage =  () => {
 
     if(error || !project) {
         return (
-            <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+            <div className="min-h-screen bg-purple-950 flex items-center justify-center">
                 <div className="text-center">
                     <Ghost className="w-20 h-20 mx-auto text-red-400 mb-2" />
                     <h1 className="text-4xl font-bold text-white mb-2">
@@ -66,9 +66,9 @@ const EditorPage =  () => {
             }}
         >
             {/* Mobile Message - Show on screens smaller than lg (1024px) */}
-            <div className="lg:hidden min-h-screen bg-slate-900 flex items-center justify-center p-6">
+            <div className="lg:hidden min-h-screen bg-purple-950 flex items-center justify-center p-6">
                 <div className="text-center max-w-md">
-                    <Monitor className="h-16 w-16 text-cyan-400 mx-auto mb-6" />
+                    <Monitor className="h-16 w-16 text-pink-400 mx-auto mb-6" />
                     <h1 className="text-2xl font-bold text-white mb-4">
                         Desktop Required
                     </h1>
@@ -82,7 +82,7 @@ const EditorPage =  () => {
             </div>
 
             {/* Desktop Editor - Show on lg screens and above */}
-            <div className="hidden lg:block min-h-screen bg-slate-900">
+            <div className="hidden lg:block min-h-screen bg-black/30">
                 <div className="flex flex-col h-screen">
                     {processingMessage && (
                         <div className="fixed inset-0 bg-black-50 backdrop-blur-xs z-50 flex items-center justify-center">
@@ -105,7 +105,7 @@ const EditorPage =  () => {
                         <EditorSidebar project={project} />
 
                         {/* Canvas Area */}
-                        <div className="flex-1 bg-slate-800">
+                        <div className="flex-1 bg-purple-950">
                             <CanvasEditor project={project} activeTool={activeTool} />
                         </div>
                     </div>

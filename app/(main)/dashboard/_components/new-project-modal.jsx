@@ -129,7 +129,7 @@ const NewProjectModal = ({ isOpen, onClose }) => {
     return (
         <>
             <Dialog open={isOpen} onOpenChange={handleClose}>
-                <DialogContent className="max-w-2xl bg-slate-800 border-white/10">
+                <DialogContent className="max-w-2xl bg-purple-900 border-white/10">
                     <DialogHeader>
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
@@ -139,7 +139,7 @@ const NewProjectModal = ({ isOpen, onClose }) => {
                                 {isFree && (
                                     <Badge
                                         variant="secondary"
-                                        className="bg-slate-700 text-white/70"
+                                        className="bg-purple-900 text-white/70"
                                     >   
                                         {currentProjectCount}/3 projects
                                     </Badge>
@@ -168,7 +168,7 @@ const NewProjectModal = ({ isOpen, onClose }) => {
                         {!selectedFile ? (
                             <div
                                 {...getRootProps()}
-                                className={`border-2 border-dashed rounded-xl p-12 text-center cursor-pointer transition-all ${isDragActive ? "border-cyan-400 bg-cyan-400/5": "border-white/20 hover:border-white/40" } ${!canCreate ? "opacity-50 pointer-events-none" : ""}`}
+                                className={`border-2 border-dashed rounded-xl p-12 text-center cursor-pointer transition-all ${isDragActive ? "border-pink-400 bg-pink-400/5": "border-white/20 hover:border-white/40" } ${!canCreate ? "opacity-50 pointer-events-none" : ""}`}
                             >
                                 <input {...getInputProps()} />
                                 <Upload className="h-12 w-12 text-white/50 mx-auto mb-4" />
@@ -219,14 +219,14 @@ const NewProjectModal = ({ isOpen, onClose }) => {
                                         value={projectTitle}
                                         onChange={(e) => setProjectTitle(e.target.value)}
                                         placeholder="Enter project name..."
-                                        className="bg-slate-700 border-white/20 text-white placeholder-white/50 focus:border-cyan-400 focus:ring-cyan-400"
+                                        className="bg-purple-950 border-white/20 text-white placeholder-white/50 focus:border-pink-400 focus:ring-pink-400"
                                     />
                                 </div>
 
                                 {/* File Details */}
-                                <div className="bg-slate-700/50 rounded-lg p-4">
+                                <div className="bg-purple-950 rounded-lg p-4">
                                     <div className="flex items-center gap-3">
-                                        <ImageIcon className="h-5 w-5 text-cyan-400" />
+                                        <ImageIcon className="h-5 w-5 text-pink-400" />
                                     </div>
                                     <p className="text-white font-medium">
                                         {selectedFile.name}

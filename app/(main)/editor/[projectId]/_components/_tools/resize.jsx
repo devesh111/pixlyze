@@ -159,7 +159,7 @@ const ResizeControls = ({ project }) => {
   return (
     <div className="space-y-6 max-w-sm">
       {/* Current Size Display */}
-      <div className="bg-slate-700/30 rounded-lg p-3 cursor-text">
+      <div className="bg-pink-100/10 rounded-lg p-3 cursor-text">
         <h4 className="text-sm font-medium text-white mb-2">Current Size</h4>
         <div className="text-xs text-white/70">
           {project.width} × {project.height} pixels
@@ -234,7 +234,7 @@ const ResizeControls = ({ project }) => {
                 onClick={() => applyAspectRatio(aspectRatio)}
                 className={`cursor-pointer justify-between h-auto py-2 ${
                   selectedPreset === aspectRatio.name
-                    ? "bg-cyan-500 hover:bg-cyan-600"
+                    ? "bg-pink-500 hover:bg-pink-600"
                     : "text-left"
                 }`}
               >
@@ -254,7 +254,7 @@ const ResizeControls = ({ project }) => {
 
       {/* New Size Preview */}
       {hasChanges && (
-        <div className="bg-slate-700/30 rounded-lg p-3">
+        <div className="bg-pink-400/10 rounded-lg p-3">
           <h4 className="text-sm font-medium text-white mb-2">
             New Size Preview
           </h4>
@@ -262,7 +262,7 @@ const ResizeControls = ({ project }) => {
             <div>
               New Canvas: {newWidth} × {newHeight} pixels
             </div>
-            <div className="text-cyan-400">
+            <div className="text-pink-400">
               {newWidth > project.width || newHeight > project.height
                 ? "Canvas will be expanded"
                 : "Canvas will be cropped"}
@@ -286,7 +286,7 @@ const ResizeControls = ({ project }) => {
       </Button>
 
       {/* Instructions */}
-      <div className="bg-slate-700/30 rounded-lg p-3 mb-10">
+      <div className="bg-pink-400/10 rounded-lg p-3 mb-10">
         <p className="text-xs text-white/70">
           <strong>Resize Canvas:</strong> Changes canvas dimensions.
           <br />

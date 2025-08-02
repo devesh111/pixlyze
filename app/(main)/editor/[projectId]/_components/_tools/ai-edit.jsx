@@ -199,19 +199,19 @@ const AIEdit = ({ project }) => {
                 key={preset.key}
                 className={`relative p-4 rounded-lg border cursor-pointer transition-all ${
                   isSelected
-                    ? "border-cyan-400 bg-cyan-400/10"
+                    ? "border-pink-400 bg-pink-400/10"
                     : "border-white/20 bg-slate-700/30 hover:border-white/40"
                 }`}
                 onClick={() => setSelectedPreset(preset.key)}
               >
                 <div className="flex flex-col items-center text-center">
-                  <Icon className="h-8 w-8 text-cyan-400 mb-2" />
+                  <Icon className="h-8 w-8 text-pink-400 mb-2" />
                   <div className="flex items-center gap-2 mb-1">
                     <h4 className="text-white font-medium text-sm">
                       {preset.label}
                     </h4>
                     {preset.recommended && (
-                      <span className="px-1.5 py-0.5 bg-cyan-500 text-white text-xs rounded-full">
+                      <span className="px-1.5 py-0.5 bg-pink-500 text-white text-xs rounded-full">
                         ★
                       </span>
                     )}
@@ -221,7 +221,7 @@ const AIEdit = ({ project }) => {
 
                 {isSelected && (
                   <div className="absolute top-2 right-2">
-                    <div className="w-3 h-3 bg-cyan-400 rounded-full"></div>
+                    <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
                   </div>
                 )}
               </div>
@@ -237,7 +237,7 @@ const AIEdit = ({ project }) => {
       </Button>
 
       {/* Information */}
-      <div className="bg-slate-700/30 rounded-lg p-4 mb-10">
+      <div className="bg-pink-400/10 rounded-lg p-4 mb-10">
         <h4 className="text-sm font-medium text-white mb-2 flex items-center gap-2">
           <Info className="h-4 w-4" />
           How AI Retouch Works

@@ -17,7 +17,7 @@ const AnimatedCounter = ({ target, suffix = "", duration = 2000 }) => {
   return (
     <span
       ref={ref}
-      className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+      className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"
     >
       {count.toLocaleString()}
       {suffix}
@@ -46,7 +46,7 @@ const InteractiveStats = () => {
                 {stat.value.toLocaleString()}
                 {stat.suffix}
               </div> */}
-              <div className="text-gray-400 uppercase tracking-wider text-sm">
+              <div className="text-white uppercase tracking-wider text-sm">
                 {stat.label}
               </div>
             </div>

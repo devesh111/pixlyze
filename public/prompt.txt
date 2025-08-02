@@ -8,7 +8,7 @@ Create a cutting-edge React landing page for an AI image editor using Tailwind C
 - Custom React hooks for cursor tracking and parallax effects
 
 **Visual Style & Effects:**
-- Dark theme using Tailwind's slate-900/black backgrounds
+- Dark theme using Tailwind's purple-900/black backgrounds
 - Custom animated cursor component that follows mouse with useEffect
 - Glassmorphism using Tailwind's backdrop-blur and bg-white/10
 - Floating geometric shapes with Tailwind's blur-3xl filters
@@ -26,7 +26,7 @@ Create a cutting-edge React landing page for an AI image editor using Tailwind C
 2. **CustomCursor Component:**
    - useState for cursor position
    - useEffect for mousemove event listeners
-   - Tailwind classes: fixed, w-5, h-5, bg-blue-500, rounded-full, pointer-events-none
+   - Tailwind classes: fixed, w-5, h-5, bg-purple-500, rounded-full, pointer-events-none
    - Conditional scaling on hover using state
 
 3. **FloatingShapes Component:**
@@ -64,6 +64,15 @@ Create a cutting-edge React landing page for an AI image editor using Tailwind C
    - Glass morphism effects
    - Scale transforms for featured card
 
+9. **ContactUs Component:**
+   - Contact us form with input fields name, email, subject and message
+   - Proper validation for all fields required and email field.
+   - Use toast for form submit error and success message.
+
+10. **Footer Component:**
+   - Copyright message with privacy policy and tnc links.
+   - Add scroll to top arrow button.
+
 **Animation Implementation:**
 - Framer Motion for component entrance animations
 - Custom useIntersectionObserver hook for scroll-triggered animations
@@ -73,7 +82,7 @@ Create a cutting-edge React landing page for an AI image editor using Tailwind C
 - useMousePosition hook for cursor following effects
 
 **Tailwind Classes to Emphasize:**
-- Dark theme: bg-slate-900, text-white
+- Dark theme: bg-purple-950, text-white
 - Glassmorphism: backdrop-blur-lg, bg-white/10, border-white/20
 - Gradients: bg-gradient-to-r, from-blue-500, via-purple-500, to-cyan-500
 - 3D effects: transform, perspective-1000, rotate-x-2, rotate-y-2

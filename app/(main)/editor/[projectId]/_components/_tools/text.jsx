@@ -212,7 +212,7 @@ const TextControls = () => {
             <select
               value={fontFamily}
               onChange={(e) => applyFontFamily(e.target.value)}
-              className="w-full px-3 py-2 bg-slate-700 border border-white/20 rounded text-white text-sm cursor-pointer"
+              className="w-full px-3 py-2 bg-purple-950 border border-white/20 rounded text-white text-sm cursor-pointer"
             >
               {FONT_FAMILIES.map((font) => (
                 <option key={font} value={font}>
@@ -275,7 +275,7 @@ const TextControls = () => {
                 value={textColor}
                 onChange={(e) => applyTextColor(e.target.value)}
                 placeholder="#000000"
-                className="flex-1 bg-slate-700 border-white/20 text-white text-sm"
+                className="flex-1 bg-purple-950 border-white/20 text-white text-sm"
               />
             </div>
           </div>
@@ -328,7 +328,7 @@ const TextControls = () => {
       )}
 
       {/* Instructions */}
-      <div className="bg-slate-700/30 rounded-lg p-3">
+      <div className="bg-pink-400/10 rounded-lg p-3">
         <p className="text-xs text-white/70">
           <strong>Double-click</strong> any text to edit it directly on canvas.
           <br />

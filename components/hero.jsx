@@ -6,11 +6,13 @@ import { Button } from '@/components/ui/button';
 import { Badge } from './ui/badge';
 import { ArrowDown, Cpu, Crop, Proportions, Scaling, Star } from 'lucide-react';
 import Image from 'next/image'
+import FadeTextDisplay from './fade-text-display';
 
 const HeroSection = () => {
     const [textVisible, setTextVisible] = useState(false);
     const [demoHovered, setDemoHovered] = useState(false);
-    
+    const texts = ['Create', 'Transform', 'Enhance', 'Reimagine'];
+
     useEffect(() => {
         const timer = setTimeout(() => setTextVisible(true), 500);
         return () => clearTimeout(timer);
@@ -21,29 +23,27 @@ const HeroSection = () => {
             <div className="text-center z-10 px-6">
                 <div className={`transition-all duration-1000 ${textVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10" }`}>
                     <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tight">
-                        <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-pulse">
-                            Create
-                        </span>
+                        <FadeTextDisplay texts={texts} />
                         <br />
-                        <span className="text-white">Without Limits</span>
+                        <span className="text-white">with AI Magic</span>
                     </h1>
 
-                    <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
-                        Professional image editing powered by AI. Crop, resize, adjust colors, remove backgrounds, and enhance your image with cutting-edge technology.
+                    <p className="text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+                        Experience the future of image editing with quantum-powered AI technology that transforms your creative vision into reality.
                     </p>
                     <div className="animate-bounce">
-                        <a href="#features" className="p-2 rounded-full transition-all duration-500 mb-6 cursor-pointer backdrop-blur-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white border-transparent hover:shadow-2xl hover:shadow-blue-500/25 hover:transform hover:scale-120 block w-10 h-10 mx-auto">
+                        <a href="#features" className="p-2 rounded-full transition-all duration-500 mb-6 cursor-pointer backdrop-blur-lg bg-gradient-to-r from-purple-500 to-pink-600 text-white border-transparent hover:shadow-2xl hover:shadow-purple-500/25 hover:transform hover:scale-120 block w-10 h-10 mx-auto">
                             <ArrowDown size={22} className="mx-auto" />
                         </a>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
                         <Link href="/dashboard">
-                            <Button variant="primary" size="xl" className="cursor-pointer">
+                            <Button variant="primary" size="fullxl" className="cursor-pointer">
                                 Start Creating
                             </Button>
                         </Link>
-                        <Button variant="glass" size="xl" className="cursor-pointer">
+                        <Button variant="glass" size="fullxl" className="cursor-pointer">
                             Watch Demo
                         </Button>
                     </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                             </div>
 
                             <div className="flex items-center justify-center">
-                                <div className="w-full h-48 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 roundex-2xl shadow-blue-500/50 flex items-center justify-center">
+                                <div className="w-full h-48 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-200 roundex-2xl shadow-purple-500/50 flex items-center justify-center">
                                     <div className="text-white font-bold">Your Canvas</div>
                                 </div>
                             </div>
